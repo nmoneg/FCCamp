@@ -1,0 +1,6 @@
+# Exclude the Obsidian note folder
+.obsidian/*
+# Exclude all the contents of the "Responsive Web Design" folder...
+Responsive Web Design/*
+# ...EXCEPT for the "Responsive Web Design Projects" folder
+!*/Responsive Web Design Projects

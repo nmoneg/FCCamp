@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 400px;
+    font-family: "Roboto Condensed", sans-serif;
+    background-image: linear-gradient(115deg, white, rgba(247, 244, 244, 0.7) ), url(https://www.forbes.com/advisor/wp-content/uploads/2021/04/bubble.jpeg-900x510.jpg);
+}
+
+#top {
+    text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 40px;
+    padding: 15px;
+    background-color: white;
+}
+
+#title {
+    font-size: 30pt;
+}
+
+#description {
+    font-style: italic;
+    font-size: 13pt;
+}
+
+#survey-form {
+    width: 525px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 13pt;
+    background-color: white;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    grid-gap: 5px;
+}
+
+#number {
+    width: 100px;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+#red-label{background-color: red; color: white;}
+#orange-label{background-color: orange;}
+#yellow-label{background-color: yellow;}
+#green-label{background-color: green; color: white;}
+#blue-label{background-color: blue; color: white;}
+#purple-label{background-color: purple; color: white;}
+#black-label{background-color: black; color: white;}
+#white-label{background-color: white; border: 1px solid black;}
+#brown-label{background-color: brown; color: white;}
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+

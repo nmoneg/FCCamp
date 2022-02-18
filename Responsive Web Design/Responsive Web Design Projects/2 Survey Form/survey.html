@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Little Survey</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    </head>
+    <body>
+        <div id="top">
+            <h1 id="title">A Little Survey</h1>
+            <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <form id="survey-form">
+            <div class="section">
+                <label for="name" id="name-label">Name:
+                    <input type="text" id="name" placeholder="Enter name" name="name" required>
+                </label>
+                <label for="email" id="email-label">Email:
+                    <input type="email" id="email" placeholder="Enter email" name="email" required>
+                </label>
+                </label>
+                <label for="number" id="number-label">Age:&nbsp;&nbsp;&nbsp;
+                <input type="number" id="number" min="1" max="110" placeholder="Enter age" name="age">
+                </label>
+                <label for="dropdown" id="dropdown-label">Favorite holiday:
+                    <select id="dropdown" name="holiday">
+                        <option value="xmas">Christmas</option>
+                        <option value="thankgiving">Thanksgiving</option>
+                        <option value="easter">Easter</option>
+                        <option value="halloween">Halloween</option>
+                    </select>
+                </label>
+            </div>
+            <div class="section">
+                <p>Favorite taste:&nbsp;
+                    <label for="sweet" id="sweet-label">Sweet
+                        <input type="radio" id="sweet" value="sweet" name="taste">
+                    </label>
+                    <label for="salty" id="salty-label">Salty
+                        <input type="radio" id="salty" value="salty" name="taste">
+                    </label>
+                    <label for="sour" id="sour-label">Sour
+                        <input type="radio" id="sour" value="sour" name="taste">
+                    </label>
+                    <label for="bitter" id="bitter-label">Bitter
+                        <input type="radio" id="bitter" value="bitter" name="taste">
+                    </label>
+                </p>
+                <p>Favorite time of day:&nbsp;
+                    <label for="morning" id="morning-label">Morning
+                        <input type="radio" id="morning" value="morning" name="time">
+                    </label>
+                    <label for="afternoon" id="afternoon-label">Afternoon
+                        <input type="radio" id="afternoon" value="afternoon" name="time">
+                    </label>
+                    <label for="evening" id="evening-label">Evening
+                        <input type="radio" id="evening" value="evening" name="time">
+                    </label>
+                    <label for="night" id="night-label">Night
+                        <input type="radio" id="night" value="night" name="time">
+                    </label>
+                </p>
+            </div>
+            <div class="section">
+                <p>Favorite color(s):</p>
+                <div id="colors">
+                    <label for="red" id="red-label">
+                        <input type="checkbox" id="red" value="red" name="color">Red
+                    </label>
+                    <label for="orange" id="orange-label">
+                        <input type="checkbox" id="orange" value="orange" name="color">Orange
+                    </label>
+                    <label for="yellow" id="yellow-label">
+                        <input type="checkbox" id="yellow" value="yellow" name="color">Yellow
+                    </label>
+                    <label for="green" id="green-label">
+                        <input type="checkbox" id="green" value="green" name="color">Green
+                    </label>
+                    <label for="blue" id="blue-label">
+                        <input type="checkbox" id="blue" value="blue" name="color">Blue
+                    </label>
+                    <label for="purple" id="purple-label">
+                        <input type="checkbox" id="purple" value="purple" name="color">Purple
+                    </label>
+                    <label for="black" id="black-label">
+                        <input type="checkbox" id="black" value="black" name="color">Black
+                    </label>
+                    <label for="white" id="white-label">
+                        <input type="checkbox" id="white" value="white" name="color">White
+                    </label>
+                    <label for="brown" id="brown-label">
+                        <input type="checkbox" id="brown" value="brown" name="color">Brown
+                    </label>
+                </div>
+            </div>
+            <div class="section">  
+                <label for="comments" id="comments-label">Comments:
+                    <textarea id="comments" name="comments" placeholder="Place comments here." rows="5" cols="60"></textarea>
+                </label>
+            </div> 
+            <button id="submit" type="submit" form="survey-form">Submit</button> 
+        </form>
+        
+    </body>
+</html>
