@@ -6,3 +6,9 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 815px) {
+    body {
+        flex-direction: column;
+    }
+}
