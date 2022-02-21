@@ -1,0 +1,29 @@
+#navbar {
+    background-color: rebeccapurple;
+}
+
+#main-doc {
+    background-color: rebeccapurple;
+}
+
+h1, h2 {
+    color: aliceblue;
+}
+
+p, li {
+    color: azure;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+code {
+    background-color: rgb(40, 17, 63);
+    color: rgb(253, 45, 86);
+    font-weight: bold;
+}
