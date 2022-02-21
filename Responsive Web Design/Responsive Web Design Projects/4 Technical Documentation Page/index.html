@@ -4,16 +4,200 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
     <title>Document</title>
 </head>
 <body>
+    <h1>Commonly Used HTML Elements</h1>
     <main id="main-doc">
-        <section class="main-section"></section>
 
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
+        <!-- Intro to HTML Elements -->
+
+        <section id="Introduction" class="main-section">
+            <header><h2>Introduction</h2></header>
+
+            <p>HTML5 introduces more descriptive HTML tags. These include:</p>
+
+            <ul>
+                <li><code>main</code>,</li>
+                <li><code>header</code>,</li>
+                <li><code>footer</code>,</li>
+                <li><code>nav</code>,</li>
+                <li><code>video</code>,</li>
+                <li><code>article</code>,</li>
+                <li><code>section</code></li>
+                <li>and others.</li>
+            </ul>
+
+            <p>These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The <code>main</code> HTML5 tag helps search engines and other developers find the main content of your page.</p>
+
+            <p>Example usage, a <code>main</code> element with two child elements nested inside it:</p>
+
+            <p>
+                <code class="code-block">
+                    &lt;main&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;Hello World&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Hello Paragraph&lt;/p&gt;<br>
+                    &lt;/main&gt;
+                </code>
+            </p>
+        </section>
+
+        <!-- Adding Images -->
+
+        <section id="Adding_Images" class="main-section">
+            <header><h2>Adding Images</h2></header>
+
+            <p>You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.</p>
+
+            <p>An example of this would be:</p>
+
+            <p>
+                <code>
+                    &lt;img src=&quot;https://www.freecatphotoapp.com/your-image.jpg&quot;&gt;
+                </code>
+            </p>
+
+            <p>Note that <code>img</code> elements are self-closing.</p>
+
+            <p>All <code>img</code> elements **must** have an <code>alt</code> attribute. The text inside an <code>alt</code> attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.</p>
+
+            <p><strong>Note:</strong> If the image is purely decorative, using an empty <code>alt</code> attribute is a best practice.</p>
+
+            <p>Ideally the <code>alt</code> attribute should not contain special characters unless needed.</p>
+
+            <p>Let's add an <code>alt</code> attribute to our <code>img</code> example above:</p>
+
+            <p>
+                <code>
+                    &lt;img src=&quot;https://www.freecatphotoapp.com/your-image.jpg&quot; alt=&quot;A business cat wearing a necktie.&quot;&gt;
+                </code>
+            </p>
+        </section>
+
+        <!-- Adding External Links -->
+
+        <section id="Adding_External_Links" class="main-section">
+            <header><h2>Adding External Links</h2></header>
+
+            <p>You can use <code>a</code> (<em>anchor</em>) elements to link to content outside of your web page.</p>
+
+            <p><code>a</code> elements need a destination web address called an <code>href</code> attribute. They also need anchor text. Here's an example:</p>
+
+            <p>
+                <code>
+                    &lt;a href=&quot;https://www.freecodecamp.org&quot;&gt;this links to freecodecamp.org&lt;/a&gt;
+                </code>
+            </p>
+
+            <p>Then your browser will display the text <code>this links to freecodecamp.org</code> as a link you can click. And that link will take you to the web address <code>https://www.freecodecamp.org</code>.</p>
+        </section>
+
+        <!-- Adding Internal Links -->
+
+        <section id="Adding Internal Links" class="main-section">
+            <header><h2>Adding Internal Links</h2></header>
+
+            <p><code>a</code> (<em>anchor</em>) elements can also be used to create internal links to jump to different sections within a webpage.</p>
+
+            <p>To create an internal link, you assign a link's <code>href</code> attribute to a hash symbol <code>#</code> plus the value of the <code>id</code> attribute for the element that you want to internally link to, usually further down the page. You then need to add the same <code>id</code> attribute to the element you are linking to. An <code>id</code> is an attribute that uniquely describes an element.</p>
+
+            <p>Below is an example of an internal anchor link and its target element:</p>
+
+            <p>
+                <code>
+                    &lt;a href=&quot;#contacts-header&quot;&gt;Contacts&lt;/a&gt;<br>
+                    ...<br>
+                    &lt;h2 id=&quot;contacts-header&quot;&gt;Contacts&lt;/h2&gt;
+                </code>
+            </p>
+
+            <p>When users click the <code>Contacts</code> link, they'll be taken to the section of the webpage with the <strong>Contacts</strong> heading element.</p>
+        </section>
+
+        <!-- Nest an Anchor Element within a Paragraph + target _blank example -->
+
+        <section id="More_About_Links" class="main-section">
+            <header><h2>More About Links</h2></header>
+
+            <p>You can nest links within other text elements.</p>
+
+            <p>
+                <code>
+                    &lt;p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; Here's a &lt;a target=&quot;_blank&quot; href=&quot;https://www.freecodecamp.org&quot;&gt; link to www.freecodecamp.org&lt;/a&gt; for you to follow.<br>
+                    &lt;/p&gt;
+                </code>
+            </p>
+
+            <p>Let's break down the example. Normal text is wrapped in the `p` element:</p>
+
+            <p>
+                <code>
+                    &lt;p&gt;Here's a ... for you to follow.&lt;/p&gt;
+                </code>
+            </p>
+
+            <p>Next is the <em>anchor</em> element <code>&lt;a&gt;</code> (which requires a closing tag <code>&lt;a&gt;</code>):</p>
+
+            <p>
+                <code>
+                    &lt;a&gt; ... &lt;/a&gt;
+                </code>
+            </p>
+
+            <p><code>target</code> is an anchor tag attribute that specifies where to open the link. The value <code>_blank</code> specifies to open the link in a new tab. The <code>href</code> is an anchor tag attribute that contains the URL address of the link:</p>
+
+            <p>
+                <code>
+                    &lt;a href=&quot;https://www.freecodecamp.org&quot; target=&quot;_blank&quot;&gt; ... &lt;/a&gt;
+                </code>
+            </p>
+
+            <p>The text, `link to www.freecodecamp.org`, within the `a` element is called anchor text, and will display the link to click:</p>
+
+            <p>
+                <code>
+                    &lt;a href=&quot; ... &quot; target=&quot;...&quot;&gt;link to freecodecamp.org&lt;/a&gt;
+                </code>
+            </p>
+
+            <p>The final output of the example will look like this:</p>
+
+            <p>Here's a <a href="https://www.freecodecamp.org/" target="_blank">link to freecodecamp.org</a> for you to follow.</p>
+        </section>
+
+        <!-- Create a Bulleted Unordered List -->
+
+        <section id="Unordered Lists" class="main-section">
+            <header><h2>Unordered Lists</h2></header>
+
+            <p>HTML has a special element for creating unordered lists, or bullet point style lists.</p>
+
+            <p>Unordered lists start with an opening <code>&lt;ul&gt;</code> element, followed by any number of <code>&lt;li&gt;</code> elements. Finally, unordered lists close with a <code>&lt;/ul&gt;</code>.</p>
+
+            <p>For example:</p>
+
+            <p>
+                <code>
+                    &lt;ul&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;milk&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;cheese&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;ice cream&lt;/li&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;yogurt&lt;/li&gt;<br>
+                    &lt;/ul&gt;
+                </code>
+            </p>
+
+            <p>would create a bullet point style list of:</p>
+
+            <ul>
+                <li>milk</li>
+                <li>cheese</li>
+                <li>ice cream</li>
+                <li>yogurt</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
