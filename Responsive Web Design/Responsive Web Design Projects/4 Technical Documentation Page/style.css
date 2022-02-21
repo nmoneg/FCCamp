@@ -5,6 +5,15 @@ body {
 nav {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+main {
+    position: absolute;
+    left: 300px;
 }
 
 @media (max-width: 815px) {
