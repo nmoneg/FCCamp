@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Barlow+Semi+Condensed:wght@100&family=Cutive+Mono&family=Merriweather+Sans&display=swap");
+
+h1, h2 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 2rem;
+}
+
+p, li {
+    font-family: "Asap", sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+code {
+    font-family: 'Cutive Mono', monospace;
+}

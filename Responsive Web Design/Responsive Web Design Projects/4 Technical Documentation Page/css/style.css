@@ -1,3 +1,5 @@
+@import url("topography.css");
+
 #navbar {
     display: flex;
     flex-direction: column;
