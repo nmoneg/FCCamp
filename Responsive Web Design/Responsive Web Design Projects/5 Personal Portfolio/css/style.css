@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#navbar {
+    height: 10vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: black;
+}
+
+#welcome-section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 500px) {
+
+    #welcome-section {
+        height: 100%;
+    }
+}
