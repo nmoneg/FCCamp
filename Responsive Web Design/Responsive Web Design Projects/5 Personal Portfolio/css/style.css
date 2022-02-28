@@ -11,12 +11,27 @@ body {
     top: 0;
     z-index: 2;
     background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* main {
+    background-image: url("https://images.pexels.com/photos/5533841/pexels-photo-5533841.jpeg");
+} */
 
 #welcome-section {
     display: flex;
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw;
 }
 
 @media (max-width: 500px) {
